@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "title": "CrediSkill - Developer Skill Validation Platform",
+    "description": "A full-stack developer profiling and skill validation platform that combines GitHub project analysis, assessment-based verification, historical performance tracking, and growth visualization. Users can add projects through GitHub repositories, automatically detect technology stacks, take skill-specific assessments, track progress through interactive charts, and build a credibility-based developer profile backed by measurable evidence rather than self-declared skills.",
+    "image": "/images/CrediSkill.png",
+    "technologies": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Passport.js",
+      "Tailwind CSS",
+      "Context API",
+      "Chart.js",
+      "GitHub REST API",
+      "REST APIs"
+    ],
+    "github": "https://github.com/HimanshuKK08/crediskill",
+    "demo": null,
+    "featured": true,
+    "category": "Full Stack"
+  },
+  {
+    "id": 2,
+    "title": "StackGuard - AI-Based Website Vulnerability Scanner",
+    "description": "A web-based vulnerability assessment platform that analyzes websites based on their technology stack and identifies potential security risks. The system performs automated technology detection, vulnerability mapping, CVE analysis, security configuration checks, and provides AI-generated remediation guidance using Gemini. Designed to help both technical and non-technical users understand and address security weaknesses.",
+    "image": "/images/StackGuard.png",
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "Python",
+      "FastAPI",
+      "Flask",
+      "MongoDB",
+      "REST APIs",
+      "Gemini AI",
+      "Wappalyzer",
+      "NVD API",
+      "Cybersecurity"
+    ],
+    "github": null,
+    "demo": null,
+    "featured": true,
+    "category": "Cybersecurity"
+  },
+  {
+    "id": 3,
+    "title": "PostVerse - Full Stack Blogging Platform",
+    "description": "A secure full-stack blogging application featuring JWT authentication, bcrypt password hashing, cookie-based session management, protected routes, and complete CRUD functionality. Users can create, edit, delete, and like posts while maintaining secure access control through middleware-driven authorization.",
+    "image": "/images/PostVerse.png",
+    "technologies": [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "bcrypt",
+      "Cookie Parser",
+      "EJS",
+      "Authentication",
+      "Authorization"
+    ],
+    "github": "https://github.com/HimanshuKK08/PostVerse",
+    "demo": null,
+    "featured": true,
+    "category": "Full Stack"
+  },
+  {
+    "id": 4,
+    "title": "Aapdamitra - Emergency Healthcare Assistance Platform",
+    "description": "A healthcare assistance application designed to simplify medical emergencies by providing real-time access to nearby hospitals, doctors, pharmacies, ambulance tracking, medicine availability, appointment booking, and AI-assisted medical guidance. Built as an integrated healthcare ecosystem focused on accessibility and faster emergency response.",
+    "image": "/images/AapdaMitra.png",
+    "technologies": [
+      "FlutterFlow",
+      "Firebase",
+      "Google Cloud",
+      "REST APIs",
+      "Mobile Development",
+      "GPS Tracking",
+      "Healthcare Technology"
+    ],
+    "github": null,
+    "demo": null,
+    "featured": true,
+    "category": "Mobile Application"
+  },
+  {
+    "id": 5,
+    "title": "Mini Operating System Simulator",
+    "description": "A C-based operating system simulation project implementing core OS concepts including memory management, paging, instruction execution, page tables, interrupt handling, PCB-based job management, and error handling. The simulator processes jobs through custom instruction sets while enforcing Total Time Limit (TTL) and Total Line Limit (TLL) constraints.",
+    "image": "/images/Mini Operating System.png",
+    "technologies": [
+      "C",
+      "Operating Systems",
+      "Memory Management",
+      "Paging",
+      "PCB",
+      "File I/O",
+      "System Programming",
+      "Data Structures",
+      "Algorithms"
+    ],
+    "github": "https://github.com/HimanshuKK08/Mini-Operating-System",
+    "demo": null,
+    "featured": false,
+    "category": "System Programming"
+  },
+  {
+    "id": 6,
+    "title": "TravelBoard - Travel Wishlist Manager",
+    "description": "A responsive travel management application that allows users to maintain a personalized list of destinations, track visited locations, edit travel plans, and discover places through real-time location suggestions. The application integrates OpenStreetMap's Nominatim API and uses Context API for state management with persistent local storage.",
+    "image": "/images/TravelBoard.png",
+    "technologies": [
+      "React.js",
+      "Context API",
+      "JavaScript",
+      "Tailwind CSS",
+      "OpenStreetMap API",
+      "Nominatim API",
+      "LocalStorage"
+    ],
+    "github": "https://github.com/HimanshuKK08/TravelBoard",
+    "demo": "https://travel-board-alpha.vercel.app",
+    "featured": false,
+    "category": "Frontend"
+  },
+  {
+    "id": 7,
+    "title": "Simple Notes App",
+    "description": "A lightweight note-taking application built with Node.js and Express that uses the local filesystem as its storage layer. Users can create, view, read, and delete text notes through a clean server-rendered interface powered by EJS templates, demonstrating backend fundamentals and file handling operations.",
+    "image": "/images/Simple Notes App.png",
+    "technologies": [
+      "Node.js",
+      "Express.js",
+      "EJS",
+      "File System",
+      "JavaScript",
+      "Server-Side Rendering"
+    ],
+    "github": "https://github.com/HimanshuKK08",
+    "demo": null,
+    "featured": false,
+    "category": "Backend"
+  }
+]

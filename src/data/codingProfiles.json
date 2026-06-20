@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "platform": "LeetCode",
+    "username": "himanshu_kk_21",
+    "url": "https://leetcode.com/u/himanshu_kk_21/",
+    "rating": "1650",
+    "solved": "450+",
+    "icon": "leetcode"
+  },
+  {
+    "id": 2,
+    "platform": "Codeforces",
+    "username": "HimanshuKK",
+    "url": "https://codeforces.com/profile/HimanshuKK",
+    "rating": "1118",
+    "solved": "100+",
+    "icon": "codeforces"
+  },
+  {
+    "id": 3,
+    "platform": "CodeChef",
+    "username": "himanshukk",
+    "url": "https://www.codechef.com/users/himanshukk",
+    "rating": "1462",
+    "solved": "150+",
+    "icon": "codechef"
+  }
+]
