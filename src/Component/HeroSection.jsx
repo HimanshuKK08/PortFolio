@@ -78,7 +78,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-xl md:text-2xl text-blue-400 font-medium"
             >
-              Full Stack Engineer
+              Software Engineer
             </motion.p>
 
             <motion.p
@@ -87,7 +87,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-neutral-400 max-w-md text-base md:text-lg"
             >
-              Building clean, scalable applications with modern web technologies. Passionate about creating intuitive user experiences.
+              Building software with a problem-solving mindset — combining strong foundations in Data Structures & Algorithms, system design principles, and full-stack development to create practical, scalable solutions.
             </motion.p>
 
             <motion.div
