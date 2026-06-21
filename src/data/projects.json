@@ -69,6 +69,28 @@
   },
   {
     "id": 4,
+    "title": "Queue Cure - Real-Time OPD Queue Management System",
+    "description": "A full-stack healthcare queue management platform designed to replace paper token systems in clinics. Features secure receptionist authentication, real-time patient queue tracking, dynamic wait-time estimation based on actual consultation durations, and instant synchronization between receptionist and patient display screens using Socket.IO. Built with an event-driven architecture to deliver live updates without page refreshes.",
+    "image": "/images/QueueCure.png",
+    "technologies": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
+      "JavaScript",
+      "REST API",
+      "Authentication",
+      "Real-Time Systems",
+      "Vercel",
+      "Render"
+    ],
+    "github": "https://github.com/HimanshuKK08/Queue-Cure",
+    "demo": "https://queue-cure-xi.vercel.app/reception/login",
+    "featured": true,
+    "category": "Full Stack"
+  },
+  {
+    "id": 5,
     "title": "Aapdamitra - Emergency Healthcare Assistance Platform",
     "description": "A healthcare assistance application designed to simplify medical emergencies by providing real-time access to nearby hospitals, doctors, pharmacies, ambulance tracking, medicine availability, appointment booking, and AI-assisted medical guidance. Built as an integrated healthcare ecosystem focused on accessibility and faster emergency response.",
     "image": "/images/AapdaMitra.png",
@@ -87,7 +109,7 @@
     "category": "Mobile Application"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Mini Operating System Simulator",
     "description": "A C-based operating system simulation project implementing core OS concepts including memory management, paging, instruction execution, page tables, interrupt handling, PCB-based job management, and error handling. The simulator processes jobs through custom instruction sets while enforcing Total Time Limit (TTL) and Total Line Limit (TLL) constraints.",
     "image": "/images/Mini Operating System.png",
@@ -108,7 +130,7 @@
     "category": "System Programming"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "TravelBoard - Travel Wishlist Manager",
     "description": "A responsive travel management application that allows users to maintain a personalized list of destinations, track visited locations, edit travel plans, and discover places through real-time location suggestions. The application integrates OpenStreetMap's Nominatim API and uses Context API for state management with persistent local storage.",
     "image": "/images/TravelBoard.png",
@@ -127,7 +149,7 @@
     "category": "Frontend"
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Simple Notes App",
     "description": "A lightweight note-taking application built with Node.js and Express that uses the local filesystem as its storage layer. Users can create, view, read, and delete text notes through a clean server-rendered interface powered by EJS templates, demonstrating backend fundamentals and file handling operations.",
     "image": "/images/Simple Notes App.png",
