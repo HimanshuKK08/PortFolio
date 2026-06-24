@@ -24,6 +24,28 @@
   },
   {
     "id": 2,
+    "title": "Queue Cure - Real-Time OPD Queue Management System",
+    "description": "A full-stack healthcare queue management platform designed to replace paper token systems in clinics. Features secure receptionist authentication, real-time patient queue tracking, dynamic wait-time estimation based on actual consultation durations, and instant synchronization between receptionist and patient display screens using Socket.IO. Built with an event-driven architecture to deliver live updates without page refreshes.",
+    "image": "/images/QueueCure.png",
+    "technologies": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
+      "JavaScript",
+      "REST API",
+      "Authentication",
+      "Real-Time Systems",
+      "Vercel",
+      "Render"
+    ],
+    "github": "https://github.com/HimanshuKK08/Queue-Cure",
+    "demo": "https://queue-cure-xi.vercel.app/reception/login",
+    "featured": true,
+    "category": "Full Stack"
+  },
+  {
+    "id": 3,
     "title": "StackGuard - AI-Based Website Vulnerability Scanner",
     "description": "A web-based vulnerability assessment platform that analyzes websites based on their technology stack and identifies potential security risks. The system performs automated technology detection, vulnerability mapping, CVE analysis, security configuration checks, and provides AI-generated remediation guidance using Gemini. Designed to help both technical and non-technical users understand and address security weaknesses.",
     "image": "/images/StackGuard.png",
@@ -46,7 +68,7 @@
     "category": "Cybersecurity"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "PostVerse - Full Stack Blogging Platform",
     "description": "A secure full-stack blogging application featuring JWT authentication, bcrypt password hashing, cookie-based session management, protected routes, and complete CRUD functionality. Users can create, edit, delete, and like posts while maintaining secure access control through middleware-driven authorization.",
     "image": "/images/PostVerse.png",
@@ -67,28 +89,7 @@
     "featured": true,
     "category": "Full Stack"
   },
-  {
-    "id": 4,
-    "title": "Queue Cure - Real-Time OPD Queue Management System",
-    "description": "A full-stack healthcare queue management platform designed to replace paper token systems in clinics. Features secure receptionist authentication, real-time patient queue tracking, dynamic wait-time estimation based on actual consultation durations, and instant synchronization between receptionist and patient display screens using Socket.IO. Built with an event-driven architecture to deliver live updates without page refreshes.",
-    "image": "/images/QueueCure.png",
-    "technologies": [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "Socket.IO",
-      "JavaScript",
-      "REST API",
-      "Authentication",
-      "Real-Time Systems",
-      "Vercel",
-      "Render"
-    ],
-    "github": "https://github.com/HimanshuKK08/Queue-Cure",
-    "demo": "https://queue-cure-xi.vercel.app/reception/login",
-    "featured": true,
-    "category": "Full Stack"
-  },
+
   {
     "id": 5,
     "title": "Aapdamitra - Emergency Healthcare Assistance Platform",
