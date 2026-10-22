@@ -5,7 +5,18 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiMongodb, SiExpress, SiPostman, SiPython } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { FaGitAlt, FaGithub, FaAws, FaDatabase } from "react-icons/fa";
-import { GraduationCap, Sparkles, Users, Briefcase } from "lucide-react";
+import { GraduationCap, Sparkles, Code2, Server, Briefcase } from "lucide-react";
+
+const fade = (delay) => ({
+  initial: { opacity: 0, y: 15 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.5, delay },
+  viewport: { once: true },
+});
+
+const B = ({ children }) => (
+  <span className="text-white font-semibold">{children}</span>
+);
 
 const skillCategories = [
   {
@@ -116,61 +127,73 @@ const About = () => {
 
         {/* Narrative Paragraphs */}
         <div className="space-y-5 text-neutral-300 text-base md:text-lg leading-relaxed mb-8">
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.15 }}
-            viewport={{ once: true }}
-          >
-            I'm a <span className="text-white font-medium">Computer Science undergraduate</span> passionate about transforming ideas into functional applications. From building full-stack platforms to simulating memory management systems in C, I thrive on solving complex problems with <span className="text-blue-400 font-medium">clean, efficient code</span>.
+          <motion.p {...fade(0.15)}>
+            Hey, I’m Himanshu, a <B>Computer Engineering</B> student at VIT Pune,
+            and I can’t leave things at “it works.” If something works, I want to
+            know <B>why</B> it works, and then what breaks it.
           </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.25 }}
-            viewport={{ once: true }}
-          >
-            What drives me isn't just writing code — it's <span className="text-white font-medium">collaborating with talented teams</span> to build meaningful solutions. I'm proactive, curious, and always eager to learn new technologies that help both me and my team grow.
+
+          <motion.p {...fade(0.25)}>
+            Which is how I end up debugging for an hour just to understand
+            something that was never broken. I like <B>edge cases</B>, the “what
+            if this fails at 2 AM” questions most people skip.
           </motion.p>
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.35 }}
-            viewport={{ once: true }}
-          >
-            Currently seeking <span className="text-blue-400 font-medium">internship opportunities</span> where I can contribute as a developer and continue evolving as a software engineer.
+
+          <motion.p {...fade(0.35)}>
+            <B>How I work:</B> I move fast and like owning things end to end.
+            I’ve led college project teams, and I’m still learning the hard part
+            of leading: slowing down to hear everyone out first. Getting better at
+            it. 😄
+          </motion.p>
+
+          <motion.p {...fade(0.45)}>
+            <B>Off the keyboard:</B> I play chess (decent, not scary) and I’m
+            happiest outdoors, somewhere with trees and no Wi-Fi. Chess and
+            engineering are the same hobby: think three moves ahead, and expect to
+            be surprised.
+          </motion.p>
+
+          <motion.p {...fade(0.55)}>
+            Right now I’m looking for <B>internships and entry-level roles</B> in{" "}
+            <B>backend and systems</B>, with a team that builds real things.
           </motion.p>
         </div>
 
-        {/* Connected Identity Badges */}
+        {/* Quick facts */}
         <div className="pt-6 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
           <div className="p-3.5 rounded-xl bg-neutral-900/60 border border-white/5 flex items-center gap-3">
             <div className="p-2 rounded-lg bg-blue-500/10 text-blue-400 shrink-0">
               <GraduationCap className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-[11px] text-neutral-400 font-medium">Education</div>
-              <div className="text-sm font-semibold text-white">B.Tech in CS</div>
+              <div className="text-[11px] text-neutral-400 font-medium">Studying</div>
+              <div className="text-sm font-semibold text-white">
+                B.Tech Computer Engineering, VIT Pune ’27
+              </div>
             </div>
           </div>
 
           <div className="p-3.5 rounded-xl bg-neutral-900/60 border border-white/5 flex items-center gap-3">
             <div className="p-2 rounded-lg bg-purple-500/10 text-purple-400 shrink-0">
-              <Sparkles className="w-5 h-5" />
+              <Code2 className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-[11px] text-neutral-400 font-medium">Focus Area</div>
-              <div className="text-sm font-semibold text-white">Full-Stack & Systems</div>
+              <div className="text-[11px] text-neutral-400 font-medium">Strongest at</div>
+              <div className="text-sm font-semibold text-white">
+                C++, DSA & Operating Systems
+              </div>
             </div>
           </div>
 
           <div className="p-3.5 rounded-xl bg-neutral-900/60 border border-white/5 flex items-center gap-3">
             <div className="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 shrink-0">
-              <Users className="w-5 h-5" />
+              <Server className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-[11px] text-neutral-400 font-medium">Mindset</div>
-              <div className="text-sm font-semibold text-white">Proactive & Team-first</div>
+              <div className="text-[11px] text-neutral-400 font-medium">Building</div>
+              <div className="text-sm font-semibold text-white">
+                Backend & real-time systems
+              </div>
             </div>
           </div>
 
@@ -183,7 +206,9 @@ const About = () => {
                 <span>Status</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
               </div>
-              <div className="text-sm font-semibold text-emerald-400">Open to Internships</div>
+              <div className="text-sm font-semibold text-emerald-400">
+                Open to internships & full-time roles
+              </div>
             </div>
           </div>
         </div>
