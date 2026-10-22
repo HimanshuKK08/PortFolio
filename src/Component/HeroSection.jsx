@@ -1,6 +1,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 import profile from "../assets/Images/profile.png";
+import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
   const ref = useRef(null);
@@ -43,13 +44,13 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6 ">
+    <section id="home" className="min-h-screen flex flex-col items-center justify-center px-4 md:px-6 pt-20 pb-4 relative">
       <motion.div
         ref={ref}
         onMouseMove={handleMouseMove}
         onMouseLeave={reset}
         style={{ rotateX, rotateY, transformStyle: "preserve-3d", transformPerspective: 1000 }}
-        className="relative max-w-6xl w-full rounded-3xl border border-white/10 bg-linear-to-br from-neutral-900 via-neutral-950 to-black shadow-2xl p-8 md:p-12 will-change-transform"
+        className="relative max-w-6xl w-full rounded-3xl border border-white/10 bg-linear-to-br from-neutral-900 via-neutral-950 to-black shadow-2xl p-8 md:p-14 lg:p-16 will-change-transform"
       >
         {/* Cursor-tracking sheen — sells the "physical surface" feel */}
         <motion.div
@@ -119,7 +120,7 @@ const HeroSection = () => {
             style={{ transformStyle: "preserve-3d" }}
           >
             <motion.div
-              className="w-64 h-80 md:w-72 md:h-96 rounded-2xl overflow-hidden shadow-2xl border border-white/10"
+              className="w-72 h-88 sm:w-80 sm:h-96 md:w-84 md:h-[420px] rounded-2xl overflow-hidden shadow-2xl border border-white/10"
               style={{
                 transform: "translateZ(60px)",
                 x: photoX,
@@ -135,6 +136,23 @@ const HeroSection = () => {
           </motion.div>
         </div>
       </motion.div>
+
+      {/* Subtle Scroll Hint */}
+      <motion.button
+        onClick={() => scrollToSection("about")}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8, duration: 0.6 }}
+        className="mt-6 flex flex-col items-center gap-1 text-xs text-neutral-400 hover:text-blue-400 transition-colors cursor-pointer group"
+      >
+        <span className="font-medium tracking-wide">Scroll down</span>
+        <motion.div
+          animate={{ y: [0, 5, 0] }}
+          transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
+        >
+          <ChevronDown className="w-4 h-4 text-neutral-400 group-hover:text-blue-400" />
+        </motion.div>
+      </motion.button>
     </section>
   );
 };

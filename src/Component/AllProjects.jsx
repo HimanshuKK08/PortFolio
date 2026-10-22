@@ -5,40 +5,27 @@ import Projects from "./Projects";
 const AllProjects = ({ onBack }) => {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Back Navigation */}
-      <div className="fixed top-4 left-6 z-50">
+      {/* Back Navigation Bar */}
+      <div className="sticky top-0 z-50 px-6 py-4 bg-black/70 backdrop-blur-xl border-b border-white/10 flex items-center justify-between">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3 }}
           onClick={onBack}
-          className="flex items-center gap-2 px-4 py-2 bg-neutral-900/80 hover:bg-neutral-800 border border-white/10 rounded-lg text-sm text-white transition-colors backdrop-blur-md"
+          className="flex items-center gap-2 px-4 py-2 bg-neutral-900/90 hover:bg-neutral-800 border border-white/10 hover:border-white/20 rounded-xl text-xs font-semibold text-white transition-all cursor-pointer shadow-sm group"
         >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-4 h-4 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-          Back
+          Back to Portfolio
         </motion.button>
+        <span className="text-xs text-neutral-400 font-mono">Himanshu Khandelwal • Project Archive</span>
       </div>
 
-      {/* Header */}
-      <div className="pt-24 pb-12">
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center px-6"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">My Projects</h1>
-          <p className="text-neutral-400 text-lg max-w-2xl mx-auto">
-            A curated collection of projects showcasing my skills in full-stack development, 
-            system programming, and modern web technologies.
-          </p>
-        </motion.div>
+      {/* Projects Grid with full catalog */}
+      <div className="pt-8">
+        <Projects isFullPage={true} />
       </div>
-
-      {/* Projects Grid */}
-      <Projects isFullPage={true} />
 
       {/* Project Statistics */}
       {/* <motion.div

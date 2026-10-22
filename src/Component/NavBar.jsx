@@ -24,7 +24,7 @@ const NavBar = () => {
         <button onClick={() => scrollToSection("home")} className="cursor-pointer opacity-80 hover:opacity-100 transition-opacity">Home</button>
         <button onClick={() => scrollToSection("about")} className="cursor-pointer opacity-80 hover:opacity-100 transition-opacity">About</button>
         <button onClick={() => scrollToSection("projects")} className="cursor-pointer opacity-80 hover:opacity-100 transition-opacity">Projects</button>
-        {/* <button onClick={() => scrollToSection("profiles")} className="cursor-pointer opacity-80 hover:opacity-100 transition-opacity">Profiles</button> */}
+        <button onClick={() => scrollToSection("coding-profiles")} className="cursor-pointer opacity-80 hover:opacity-100 transition-opacity">Profiles</button>
         <button onClick={() => scrollToSection("contact")} className="cursor-pointer opacity-80 hover:opacity-100 transition-opacity">Connect</button>
       </div>
     </nav>

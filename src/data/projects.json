@@ -1,21 +1,47 @@
 [
   {
     "id": 1,
+    "title": "ClassHub - Git-Native Classroom & Plagiarism Detection",
+    "shortDescription": "A self-hosted classroom platform where students submit code via real git push/clone protocols, featuring a custom C++ plagiarism detection engine.",
+    "fullDescription": "A self-hosted classroom platform where students submit code via real git push/clone instead of file uploads. Teachers create classrooms and assignments with deadlines; students push work through git's smart HTTP protocol, authenticated with personal access tokens separate from browser sessions. Enforces server-side deadline checks that block pushes but allow reads after the cutoff, and includes a custom C++ plagiarism detection engine built from scratch using tokenization, identifier normalization, and the Winnowing algorithm with Rabin-Karp rolling hashes to catch renamed or reformatted code copying, with results surfaced in a teacher-facing report view.",
+    "highlights": [
+      "Real Git Smart HTTP push/clone protocol with Personal Access Tokens",
+      "Custom C++ plagiarism detection engine using Winnowing & Rabin-Karp rolling hashes",
+      "Server-side cutoff enforcement and teacher similarity report view"
+    ],
+    "image": "/images/ClassHub.png",
+    "technologies": [
+      "React.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "C++",
+      "Git Internals",
+      "JWT Auth"
+    ],
+    "github": "https://github.com/HimanshuKK08/classhub",
+    "demo": null,
+    "featured": true,
+    "category": "Systems & Full-Stack"
+  },
+  {
+    "id": 2,
     "title": "CrediSkill - Developer Skill Validation Platform",
-    "description": "A full-stack developer profiling and skill validation platform that combines GitHub project analysis, assessment-based verification, historical performance tracking, and growth visualization. Users can add projects through GitHub repositories, automatically detect technology stacks, take skill-specific assessments, track progress through interactive charts, and build a credibility-based developer profile backed by measurable evidence rather than self-declared skills.",
+    "shortDescription": "Full-stack developer profiling platform combining automated GitHub project inspection, skill assessments, and evidence-backed growth charts.",
+    "fullDescription": "A full-stack developer profiling and skill validation platform that combines GitHub project analysis, assessment-based verification, historical performance tracking, and growth visualization. Users can add projects through GitHub repositories, automatically detect technology stacks, take skill-specific assessments, track progress through interactive charts, and build a credibility-based developer profile backed by measurable evidence rather than self-declared skills.",
+    "highlights": [
+      "Automated GitHub repository stack detection and code inspection",
+      "Skill-specific assessments and evidence-backed validation",
+      "Interactive historical performance and credibility tracking"
+    ],
     "image": "/images/CrediSkill.png",
     "technologies": [
       "React.js",
       "Node.js",
       "Express.js",
       "MongoDB",
-      "Mongoose",
-      "Passport.js",
-      "Tailwind CSS",
-      "Context API",
       "Chart.js",
-      "GitHub REST API",
-      "REST APIs"
+      "GitHub REST API"
     ],
     "github": "https://github.com/HimanshuKK08/crediskill",
     "demo": null,
@@ -23,9 +49,15 @@
     "category": "Full Stack"
   },
   {
-    "id": 2,
-    "title": "Queue Cure - Real-Time OPD Queue Management System",
-    "description": "A full-stack healthcare queue management platform designed to replace paper token systems in clinics. Features secure receptionist authentication, real-time patient queue tracking, dynamic wait-time estimation based on actual consultation durations, and instant synchronization between receptionist and patient display screens using Socket.IO. Built with an event-driven architecture to deliver live updates without page refreshes.",
+    "id": 3,
+    "title": "Queue Cure - Real-Time OPD Queue Management",
+    "shortDescription": "Full-stack healthcare queue management platform replacing paper tokens with live synchronization and dynamic wait-time estimation.",
+    "fullDescription": "A full-stack healthcare queue management platform designed to replace paper token systems in clinics. Features secure receptionist authentication, real-time patient queue tracking, dynamic wait-time estimation based on actual consultation durations, and instant synchronization between receptionist and patient display screens using Socket.IO. Built with an event-driven architecture to deliver live updates without page refreshes.",
+    "highlights": [
+      "Real-time bidirectional synchronization using Socket.IO",
+      "Dynamic wait-time estimation based on actual consultation durations",
+      "Synchronized receptionist dashboard & live patient display screen"
+    ],
     "image": "/images/QueueCure.png",
     "technologies": [
       "React.js",
@@ -33,44 +65,47 @@
       "Express.js",
       "Socket.IO",
       "JavaScript",
-      "REST API",
-      "Authentication",
-      "Real-Time Systems",
-      "Vercel",
-      "Render"
+      "REST API"
     ],
     "github": "https://github.com/HimanshuKK08/Queue-Cure",
     "demo": "https://queue-cure-xi.vercel.app/reception/login",
     "featured": true,
-    "category": "Full Stack"
+    "category": "Real-Time / Full Stack"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "StackGuard - AI-Based Website Vulnerability Scanner",
-    "description": "A web-based vulnerability assessment platform that analyzes websites based on their technology stack and identifies potential security risks. The system performs automated technology detection, vulnerability mapping, CVE analysis, security configuration checks, and provides AI-generated remediation guidance using Gemini. Designed to help both technical and non-technical users understand and address security weaknesses.",
+    "shortDescription": "Web vulnerability assessment platform analyzing technology stacks, CVE mappings, and delivering AI-generated remediation guidance.",
+    "fullDescription": "A web-based vulnerability assessment platform that analyzes websites based on their technology stack and identifies potential security risks. The system performs automated technology detection, vulnerability mapping, CVE analysis, security configuration checks, and provides AI-generated remediation guidance using Gemini. Designed to help both technical and non-technical users understand and address security weaknesses.",
+    "highlights": [
+      "Automated technology fingerprinting & CVE database mapping",
+      "Security configuration audit and risk assessment scoring",
+      "AI-generated remediation roadmaps powered by Gemini AI"
+    ],
     "image": "/images/StackGuard.png",
     "technologies": [
       "React.js",
-      "Tailwind CSS",
       "Python",
       "FastAPI",
-      "Flask",
       "MongoDB",
-      "REST APIs",
       "Gemini AI",
-      "Wappalyzer",
-      "NVD API",
-      "Cybersecurity"
+      "NVD API"
     ],
     "github": null,
     "demo": null,
     "featured": true,
-    "category": "Cybersecurity"
+    "category": "Cybersecurity / AI"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "PostVerse - Full Stack Blogging Platform",
-    "description": "A secure full-stack blogging application featuring JWT authentication, bcrypt password hashing, cookie-based session management, protected routes, and complete CRUD functionality. Users can create, edit, delete, and like posts while maintaining secure access control through middleware-driven authorization.",
+    "shortDescription": "Secure full-stack blogging application featuring JWT authentication, protected routes, and complete CRUD functionality.",
+    "fullDescription": "A secure full-stack blogging application featuring JWT authentication, bcrypt password hashing, cookie-based session management, protected routes, and complete CRUD functionality. Users can create, edit, delete, and like posts while maintaining secure access control through middleware-driven authorization.",
+    "highlights": [
+      "JWT authentication with bcrypt hashing & cookie session management",
+      "Middleware-driven authorization and route protection",
+      "Complete CRUD functionality for posts, comments, and interactions"
+    ],
     "image": "/images/PostVerse.png",
     "technologies": [
       "Node.js",
@@ -78,31 +113,30 @@
       "MongoDB",
       "Mongoose",
       "JWT",
-      "bcrypt",
-      "Cookie Parser",
-      "EJS",
-      "Authentication",
-      "Authorization"
+      "bcrypt"
     ],
     "github": "https://github.com/HimanshuKK08/PostVerse",
     "demo": null,
     "featured": true,
     "category": "Full Stack"
   },
-
   {
-    "id": 5,
-    "title": "Aapdamitra - Emergency Healthcare Assistance Platform",
-    "description": "A healthcare assistance application designed to simplify medical emergencies by providing real-time access to nearby hospitals, doctors, pharmacies, ambulance tracking, medicine availability, appointment booking, and AI-assisted medical guidance. Built as an integrated healthcare ecosystem focused on accessibility and faster emergency response.",
+    "id": 6,
+    "title": "Aapdamitra - Emergency Healthcare Assistance",
+    "shortDescription": "Healthcare assistance application connecting users with emergency hospital access, pharmacy availability, and live ambulance tracking.",
+    "fullDescription": "A healthcare assistance application designed to simplify medical emergencies by providing real-time access to nearby hospitals, doctors, pharmacies, ambulance tracking, medicine availability, appointment booking, and AI-assisted medical guidance. Built as an integrated healthcare ecosystem focused on accessibility and faster emergency response.",
+    "highlights": [
+      "Live GPS tracking for ambulances and nearby emergency facilities",
+      "Real-time medicine availability search across pharmacies",
+      "Integrated emergency guidance and appointment scheduling"
+    ],
     "image": "/images/AapdaMitra.png",
     "technologies": [
       "FlutterFlow",
       "Firebase",
       "Google Cloud",
       "REST APIs",
-      "Mobile Development",
-      "GPS Tracking",
-      "Healthcare Technology"
+      "GPS Tracking"
     ],
     "github": null,
     "demo": null,
@@ -110,19 +144,21 @@
     "category": "Mobile Application"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Mini Operating System Simulator",
-    "description": "A C-based operating system simulation project implementing core OS concepts including memory management, paging, instruction execution, page tables, interrupt handling, PCB-based job management, and error handling. The simulator processes jobs through custom instruction sets while enforcing Total Time Limit (TTL) and Total Line Limit (TLL) constraints.",
+    "shortDescription": "C-based operating system simulator implementing virtual memory paging, PCB job management, and instruction execution cycles.",
+    "fullDescription": "A C-based operating system simulation project implementing core OS concepts including memory management, paging, instruction execution, page tables, interrupt handling, PCB-based job management, and error handling. The simulator processes jobs through custom instruction sets while enforcing Total Time Limit (TTL) and Total Line Limit (TLL) constraints.",
+    "highlights": [
+      "Virtual memory paging & page table address translation",
+      "Process Control Block (PCB) tracking with TTL/TLL limits",
+      "Custom instruction set execution & interrupt handling"
+    ],
     "image": "/images/Mini Operating System.png",
     "technologies": [
       "C",
       "Operating Systems",
-      "Memory Management",
-      "Paging",
-      "PCB",
-      "File I/O",
-      "System Programming",
-      "Data Structures",
+      "Memory Paging",
+      "PCB Management",
       "Algorithms"
     ],
     "github": "https://github.com/HimanshuKK08/Mini-Operating-System",
@@ -131,40 +167,26 @@
     "category": "System Programming"
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "TravelBoard - Travel Wishlist Manager",
-    "description": "A responsive travel management application that allows users to maintain a personalized list of destinations, track visited locations, edit travel plans, and discover places through real-time location suggestions. The application integrates OpenStreetMap's Nominatim API and uses Context API for state management with persistent local storage.",
+    "shortDescription": "Responsive travel planning application featuring interactive destination search with OpenStreetMap and persistent state storage.",
+    "fullDescription": "A responsive travel management application that allows users to maintain a personalized list of destinations, track visited locations, edit travel plans, and discover places through real-time location suggestions. The application integrates OpenStreetMap's Nominatim API and uses Context API for state management with persistent local storage.",
+    "highlights": [
+      "OpenStreetMap & Nominatim API integration for live location lookup",
+      "Personalized destination wishlist with visited status tracking",
+      "Context API state management with persistent LocalStorage"
+    ],
     "image": "/images/TravelBoard.png",
     "technologies": [
       "React.js",
       "Context API",
-      "JavaScript",
       "Tailwind CSS",
       "OpenStreetMap API",
-      "Nominatim API",
       "LocalStorage"
     ],
     "github": "https://github.com/HimanshuKK08/TravelBoard",
     "demo": "https://travel-board-alpha.vercel.app",
     "featured": false,
     "category": "Frontend"
-  },
-  {
-    "id": 8,
-    "title": "Simple Notes App",
-    "description": "A lightweight note-taking application built with Node.js and Express that uses the local filesystem as its storage layer. Users can create, view, read, and delete text notes through a clean server-rendered interface powered by EJS templates, demonstrating backend fundamentals and file handling operations.",
-    "image": "/images/Simple Notes App.png",
-    "technologies": [
-      "Node.js",
-      "Express.js",
-      "EJS",
-      "File System",
-      "JavaScript",
-      "Server-Side Rendering"
-    ],
-    "github": "https://github.com/HimanshuKK08",
-    "demo": null,
-    "featured": false,
-    "category": "Backend"
   }
 ]
